@@ -11,6 +11,9 @@ function theme_setup(){
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'asdviterbosc' ),
 	) );
+
+	//post formats decommentare la linea sotto se voglio attivarli
+	//add_theme_support('post-formats', array('gallery'));
 }
 
 add_action('after_setup_theme', 'theme_setup' );
