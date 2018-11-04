@@ -1,6 +1,6 @@
 <?php
-// Register Custom Navigation Walker
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+// Require navwalker
+require_once get_template_directory() . '/bs4navwalker.php';
 
 // Theme support
 function theme_setup(){
@@ -8,9 +8,7 @@ function theme_setup(){
 	add_theme_support('post-thumbnails');
 
 	//nav menus
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'asdviterbosc' ),
-	) );
+	register_nav_menu('top', 'Top menu');
 
 	//post formats decommentare la linea sotto se voglio attivarli
 	//add_theme_support('post-formats', array('gallery'));
