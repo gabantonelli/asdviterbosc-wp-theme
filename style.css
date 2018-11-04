@@ -16,10 +16,6 @@ body{
   background-color: #ffffff;
 }
 
-.navbar-toggler{
-    float:right;
-}
-
 .logo-testuale{
     display: inline;
     line-height: 40px;
@@ -36,4 +32,23 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+
+  .carousel-overlay{
+    background-color: rgba(0,0,0, 0.6);
+    height:100%;
+  }
+
+  .testo-carousel{
+    font-size: 1.8rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px;
+    color: #ffffff;
+  }
+
+  .testo-carousel h3{
+      font-size: 3rem;
+      text-transform: uppercase;
   }
