@@ -12,32 +12,28 @@
         <?php wp_head(); ?>
     </head>
     <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-        <img src="<?php bloginfo('template_url'); ?>/img/logo-sito-pro-loco-bomarzo-orso.png" class="d-inline-block align-top" alt="logo mobile pro loco bomarzo">
-        <p class="logo-testuale">PRO LOCO <span class="logo-testuale-rosso">BOMARZO</span></p>
-    </a>
-    <a href="<?php echo get_home_url(); ?>"><img class="immagine-logo" src="<?php bloginfo('template_url'); ?>/img/logo-sito-pro-loco-bomarzo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <?php
-    wp_nav_menu([
-        'menu'            => 'top',
-        'theme_location'  => 'top',
-        'container'       => 'div',
-        'container_id'    => 'bs4navbar',
-        'container_class' => 'collapse navbar-collapse',
-        'menu_id'         => false,
-        'menu_class'      => 'navbar-nav ml-auto',
-        'depth'           => 2,
-        'fallback_cb'     => 'bs4navwalker::fallback',
-        'walker'          => new bs4navwalker()
-    ]);
-    ?>
-</nav>
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="<?php echo get_home_url(); ?>"><img class="immagine-logo" src="<?php bloginfo('template_url'); ?>/img/logo-asd-viterbo-scuola-calcio.png"></a>
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <?php
+      wp_nav_menu([
+          'menu'            => 'top',
+          'theme_location'  => 'top',
+          'container'       => 'div',
+          'container_id'    => 'bs4navbar',
+          'container_class' => 'collapse navbar-collapse',
+          'menu_id'         => false,
+          'menu_class'      => 'navbar-nav ml-auto',
+          'depth'           => 2,
+          'fallback_cb'     => 'bs4navwalker::fallback',
+          'walker'          => new bs4navwalker()
+      ]);
+      ?>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -76,4 +72,3 @@
         </a>
       </div>
     </header>
-    
