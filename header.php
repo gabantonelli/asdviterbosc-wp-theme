@@ -12,23 +12,23 @@
         <?php wp_head(); ?>
     </head>
     <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <?php
-            wp_nav_menu( array(
-                'theme_location'  => 'primary',
-                'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
-                'container'       => 'div',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'bs-example-navbar-collapse-1',
-                'menu_class'      => 'navbar-nav mr-auto',
-                'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                'walker'          => new WP_Bootstrap_Navwalker(),
-            ) );
-            ?>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="<?php echo get_home_url(); ?>"><img class="immagine-logo" src="<?php bloginfo('template_url'); ?>/img/logo-asd-viterbo-scuola-calcio.png"></a>
+      <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#bs4navbar" aria-controls="bs4navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <?php
+      wp_nav_menu([
+          'menu'            => 'top',
+          'theme_location'  => 'top',
+          'container'       => 'div',
+          'container_id'    => 'bs4navbar',
+          'container_class' => 'collapse navbar-collapse',
+          'menu_id'         => false,
+          'menu_class'      => 'navbar-nav ml-auto',
+          'depth'           => 2,
+          'fallback_cb'     => 'bs4navwalker::fallback',
+          'walker'          => new bs4navwalker()
+      ]);
+      ?>
+    </nav>
