@@ -34,10 +34,24 @@
         </a>
       </div>
       <main class="container">
-          <?php if(have_posts()) : ?>
-            <?php while(have_posts()): the_post(); ?>
+          <?php if(have_posts()) : $contatorePost = 0;?>
+            <?php while(have_posts()&&$contatorePost<=5): the_post();?>
+            <?php 
+            //apro la row di notizie
+            if($contatorePost % 3 == 0) :?>
+              <div class="row">
+            <?php endif; ?>
+            <div class="col-md-4">
+            <?php echo($contatorePost % 3); ?>
               <?php get_template_part('content'); ?>
+            </div>   
+            <?php $contatorePost++; ?>
             <?php endwhile; ?>
+            <?php 
+            // chiudo la linea di notizie
+            if($contatorePost % 3 == 0) :?>
+            </div>
+            <?php endif; ?> 
             <?php else: ?>
               <p><?php __('No Posts Found'); ?></p>
             <?php endif; ?>
