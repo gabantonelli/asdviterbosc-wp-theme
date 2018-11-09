@@ -1,5 +1,33 @@
 <footer>
-    <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
+    <div class="container">
+        <div class="row" id="footer_links">
+            <div class="col-md-3">
+                <?php if(is_active_sidebar('footer-1')): ?>
+                    <?php dynamic_sidebar('footer-1'); ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-md-3">
+                <?php if(is_active_sidebar('footer-2')): ?>
+                    <?php dynamic_sidebar('footer-2'); ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-md-3">
+                <?php if(is_active_sidebar('footer-3')): ?>
+                    <?php dynamic_sidebar('footer-3'); ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-md-3">
+                <?php if(is_active_sidebar('footer-4')): ?>
+                    <?php dynamic_sidebar('footer-4'); ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <div class="box-copyrights">
+        <div class="container">
+            <p class="copyrights">Sito web realizzato da <a href="http://www.gabrielantonelli.it">Gabriel Antonelli</a><br>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?>. Tutti i diritti riservati</p>
+        </div>
+    </div>
 </footer>
 <?php wp_footer(); ?>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

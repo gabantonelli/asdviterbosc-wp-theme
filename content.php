@@ -14,6 +14,7 @@
       </a>
     </div>
   </header>
+  <div class="testo-articolo">
   <?php if(is_single()): ?>
     <?php the_content(); ?>
   <?php else : ?>
@@ -22,4 +23,5 @@
   <?php if(is_single()): ?>
     <?php comments_template(); ?>
   <?php endif; ?>
+</div>
 </article>
