@@ -55,8 +55,5 @@
             <?php else: ?>
               <p><?php __('No Posts Found'); ?></p>
             <?php endif; ?>
-            <?php if(is_active_sidebar('sidebar')) :?>
-              <?php dynamic_sidebar('sidebar'); ?>
-            <?php endif;?>
       </main>
 <?php get_footer(); ?>
