@@ -155,7 +155,7 @@ article p,ul,figure, h3 {
   Post nella homepage
 */
 article.home-preview{
-  padding: 0 20px;
+  padding: 0 20px 50px 20px;
 }
 
 article.home-preview h2{

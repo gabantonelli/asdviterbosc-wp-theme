@@ -60,11 +60,19 @@
     </div>
 </header>
 <a href="<?php the_permalink();?>">
-<img class="img-fluid preview-immagine" src="//via.placeholder.com/4096x2304">
+<?php if(has_post_thumbnail()) :?>
+<?php the_post_thumbnail('home-thumb', array(
+                         'class' => 'img-fluid preview-immagine',
+                         'alt' => get_the_title())
+                         ); ?>
+<?php else: ?>
+<img class="img-fluid preview-immagine" src="<?php bloginfo('template_directory');?>/img/asd-viterbo-scuola-calcio-no-foto.png" alt="Nessuna immagine per il post">
+<?php endif; ?>
 </a>
   <div class="preview-articolo">
     <a href="<?php the_permalink();?>">
       <?php the_excerpt(); ?>
+      <button class="btn btn-primary btn-sm">Leggi</button>
     </a>  
 </div>
 </article>
