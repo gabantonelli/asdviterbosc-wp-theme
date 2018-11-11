@@ -6,7 +6,10 @@ require_once get_template_directory() . '/bs4navwalker.php';
 function theme_setup(){
 	//support featured images
 	add_theme_support('post-thumbnails');
-
+    //resize featured images in editor
+    set_post_thumbnail_size(500, 281, true );
+    //add image size for featured images for the view
+    add_image_size( 'home-thumb', 500, 281, true );
 	//nav menus
 	register_nav_menu('top', 'Top menu');
 
