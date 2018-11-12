@@ -157,6 +157,11 @@ article p,ul,figure, h3 {
 .testo-articolo {
   padding: 40px 0;
 }
+
+.comment-form-comment textarea{
+  width:90% !important;
+  margin:auto;
+}
 /*
   Post nella homepage
 */
