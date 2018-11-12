@@ -13,6 +13,10 @@ body{
     color:#3e3e3e;
 }
 
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #293B7D !important;
+}
+
 a {
   color: #293B7D;
 }
@@ -31,12 +35,9 @@ section {
   padding: 0 30px;
 }
 
-.logo-testuale{
-    display: inline;
-    line-height: 40px;
-    padding-left: 15px;
-    font-weight:600;
-    color: rgb(81,81,87);
+nav button{
+  display:block;
+  margin-left:auto;
 }
 
 .carousel-item {
@@ -55,16 +56,16 @@ section {
   }
 
   .testo-carousel{
-    font-size: 1.8rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 80%;
-    margin: 0 auto;
     padding-top: 60px;
     color: #ffffff;
+    width: 80%;
+    margin: 0 auto;
+    font-size:1.125rem;
   }
 
   .testo-carousel h3{
-      font-size: 3rem;
+      font-size: 2rem;
       text-transform: uppercase;
   }
 
@@ -77,11 +78,12 @@ footer{
   padding-top: 3.7em;
   background: #323639;
   color:white;
-  font-size:0.9rem;
+  font-size:1rem;
 }
 
 footer h4{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin-bottom:1rem;
 }
 
 footer ul{
@@ -90,8 +92,15 @@ footer ul{
 }
 
 footer ul li{
-  line-height:1.2rem;
+  font-size: 1.0625rem;
+  line-height:1.6875rem;
 }
+
+footer li.recentcomments{
+  font-size:0.9rem;
+  line-height:1rem;
+}
+
 
 footer a{
   color:white;
@@ -204,6 +213,16 @@ aside div.sidebar-module ul {
 /*
   Correzioni schermi larghi
 */
+@media screen and (min-width: 450px) {
+  
+  .testo-carousel{
+    font-size: 1.8rem;
+  }
+
+  .testo-carousel h3{
+      font-size: 3rem;
+  }
+}
 
 @media screen and (min-width: 900px) {
   .testo-articolo {
