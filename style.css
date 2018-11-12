@@ -194,6 +194,10 @@ article.home-preview .article-meta{
 .preview-articolo a{
   color: #3e3e3e;
 }
+
+.preview-articolo p{
+  margin-bottom: 1rem;
+}
 /*
   stile aside
 */
