@@ -31,10 +31,6 @@ section {
   font-size:1.1rem;
 }
 
-.pagina-intera {
-  padding: 0 30px;
-}
-
 nav button{
   display:block;
   margin-left:auto;
@@ -151,6 +147,7 @@ article {
 article h2{
   font-size: 3.2rem;
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 article p,ul,figure, h3 {
@@ -194,6 +191,10 @@ article.home-preview .article-meta{
 .preview-articolo a{
   color: #3e3e3e;
 }
+
+.preview-articolo p{
+  margin-bottom: 1rem;
+}
 /*
   stile aside
 */
@@ -226,12 +227,17 @@ aside div.sidebar-module ul {
 
 @media screen and (min-width: 900px) {
   .testo-articolo {
-    padding-right: 10%;
-    padding-left:2%;
     padding-bottom: 4rem;
   }
 
   .contenuto-principale {
-    border-right: 2px solid #f0f0f0;
+    max-width: 700px;
+    margin:auto;
+  }
+
+  aside{
+    border-left: 2px solid #f0f0f0;
+    height:100%;
+    padding: 30px;
   }
 }
