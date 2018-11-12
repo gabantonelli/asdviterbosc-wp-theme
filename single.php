@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="container">
 <div class="row pagina-intera">
   <div class="col-md-9 contenuto-principale">
         <main >
@@ -18,5 +19,6 @@
             <?php endif;?>
     </aside>
   </div>
-</div>        
+</div> 
+</div>       
 <?php get_footer(); ?>
