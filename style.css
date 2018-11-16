@@ -59,6 +59,14 @@ nav button {
   height: 100%;
 }
 
+.link-carousel {
+  color: #ffffff;
+}
+
+.link-carousel:hover {
+  color: #ffffff;
+}
+
 .testo-carousel {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding-top: 60px;
