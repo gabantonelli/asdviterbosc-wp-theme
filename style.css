@@ -221,6 +221,43 @@ article.home-preview .article-meta {
   margin-bottom: 1rem;
 }
 /*
+  stile news archivio
+*/
+.articolo-archivio {
+  border-bottom: 2px solid #f0f0f0;
+  margin-top: 25px;
+}
+
+.articolo-archivio h2 {
+  font-size: 2rem;
+}
+
+.articolo-archivio .article-meta {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: #888888;
+}
+
+.articolo-archivio .testo-articolo {
+  padding-top: 20px;
+  font-size: 1.125rem;
+  line-height: 1.4625rem;
+  padding-bottom: 0;
+}
+
+.articolo-archivio .testo-articolo p {
+  margin-bottom: 0;
+}
+
+.articolo-archivio .testo-articolo a {
+  color: #3e3e3e;
+}
+
+.articolo-archivio .row {
+  margin-bottom: 40px;
+}
+
+/*
   stile aside
 */
 
