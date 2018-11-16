@@ -9,8 +9,10 @@
           <div class="carousel-item active" style="background-image: url('<?php bloginfo('template_directory');?>/img/slider1.jpg')">
             <div class="carousel-overlay">
               <div class="testo-carousel">
+              <a href="<?php echo site_url(); ?>/strutture" class="link-carousel">
               <h3>Un campo da calcio a 9 in erba con irrigazione</h3>
               <p>Due campi da calcio a 5 in sintetico</p>
+              </a>
             </div>
             </div>        
           </div>
@@ -18,8 +20,10 @@
           <div class="carousel-item" style="background-image: url('<?php bloginfo('template_directory');?>/img/scuola-calcio-viterbo-affiliata-ss-lazio.jpg">
             <div class="carousel-overlay">
               <div class="testo-carousel">
+              <a href="<?php echo site_url(); ?>/scuola-calcio" class="link-carousel">
                 <h3>Scuola calcio affiliata SS Lazio</h3>
                 <p>La migliore scuola calcio della provincia di Viterbo</p>
+              </a>
               </div>
             </div>  
           </div>
