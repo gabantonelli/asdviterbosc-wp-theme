@@ -35,6 +35,15 @@
                     </div>
                     </article>
                 <?php endwhile; ?>
+                <div class="row paginazione">
+                    <div class="col-6 text-left">
+                        <?php next_posts_link('< Precedenti');?>
+                    </div>
+                    <div class="col-6 text-right">
+                        <?php previous_posts_link('Successivi >');?>
+                    </div>
+                </div>
+                    
             <?php else: ?>
             <p><?php __('No Posts Found'); ?></p>
             <?php endif; ?>
