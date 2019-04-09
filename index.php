@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+      <main class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -37,7 +39,6 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <main class="container">
         <section>
           <?php if(have_posts()) : $contatorePost = 0;?>
             <?php while(have_posts()&&$contatorePost<=5): the_post();?>
