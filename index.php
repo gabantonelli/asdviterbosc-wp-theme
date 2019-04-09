@@ -42,16 +42,17 @@
           <?php if(have_posts()) : $contatorePost = 0;?>
             <?php while(have_posts()&&$contatorePost<=5): the_post();?>
             <?php 
+            $numRow = 1;
             //apro la row di notizie
             if($contatorePost % 3 == 0) :
             $postRimanentiFila = 3;
             ?>
-              <div class="row">
+              <div class="row riga-notizie">
             <?php endif; ?>
             <div class="col-md-4">
             <article class="home-preview">
             <header>
-              <h2>
+              <h2 class="news-thumb-title">
                 <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
               </h2>
               <div class="article-meta">
@@ -101,5 +102,5 @@
             <?php endif; ?>
     </main>
   </section>
-    
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/equalHeights.js"></script>
 <?php get_footer(); ?>
