@@ -162,6 +162,7 @@ article h2 {
   font-size: 3.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin-top:40px;
 }
 
 article p,
@@ -294,13 +295,14 @@ aside div.sidebar-module ul {
 }
 
 @media screen and (min-width: 900px) {
+  .navbar{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(88, 88, 88, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(88, 88, 88, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(88, 88, 88, 0.75);
+  }
+  
   .testo-articolo {
     padding-bottom: 4rem;
-  }
-
-  .contenuto-principale {
-    max-width: 700px;
-    margin: 0 auto;
   }
 
   aside {
